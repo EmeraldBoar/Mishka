@@ -1,0 +1,30 @@
+.page-header {
+  margin-bottom: 500px;
+}
+
+.page-header__delivery {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    border-bottom: 1px solid #ececec;
+  }
+
+  .page-header__delivery {
+    display: inline-block;
+    padding-top: 18px;
+    padding-left: 50px;
+    margin-left: auto;
+    margin-bottom: -45px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  // .page-header {
+  //   border: none;
+  // }
+}
