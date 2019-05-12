@@ -1,0 +1,136 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 486px;
+  padding-top: 70px;
+  background-color: #f9f9f9;
+  background-image: url("../img/logo-hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center -20px;
+}
+
+.services__title {
+  margin: 0;
+  font-size: 27px;
+  line-height: 30px;
+  color: $color-black;
+  text-align: center;
+}
+
+.services__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.services__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 103px;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  background-color: #56c3b2;
+  text-decoration: none;
+}
+
+.services__button:hover .services__icon,
+.services__button:focus .services__icon {
+  opacity: 0.7;
+}
+
+.services__button:active .services__icon,
+.services__button:active .services__name {
+  opacity: 0.3;
+}
+
+.services__button--bgc {
+  background-color: #63d1bb;
+}
+
+.services__name {
+  width: 138px;
+  font-weight: 700;
+}
+
+.services__icon {
+  fill: #149080;
+  opacity: 0.5;
+}
+
+.services__icon--transform {
+  transform: translateX(-7px);
+}
+
+@media (min-width: $tablet-width) {
+  .services {
+    position: relative;
+    min-height: 746px;
+    margin-top: -42px;
+    padding-top: 154px;
+    background-image: url("../img/logo-hero-desktop.jpg");
+    background-position: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+    }
+  }
+
+  .services__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .services__button {
+    width: 50%;
+    height: 119px;
+    padding: 36px;
+    transition: all .3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      transform: translateY(-5px);
+    }
+  }
+
+  .services__wrapper {
+    flex-direction: row;
+    padding: 0 6.5%;
+  }
+
+  .services__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .services__icon--transform {
+    transform: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services {
+    &::after {
+      bottom: -15px;
+      height: 34px;
+    }
+  }
+
+  .services__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .services__wrapper {
+    padding: 0 4.2%;
+  }
+}
