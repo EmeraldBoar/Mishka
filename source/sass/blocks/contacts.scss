@@ -1,0 +1,137 @@
+.contacts {
+  padding-top: 36px;
+  padding-bottom: 39px;
+  overflow-x: hidden;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $color-black;
+  }
+
+  .contacts__wrapper {
+    margin-bottom: 38px;
+  }
+
+  .contacts__row {
+    display: flex;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .contacts__name {
+    margin-right: 11.41%;
+    font-size: 15px;
+    line-height: 30px;
+    text-transform: lowercase;
+  }
+
+  .contacts__email {
+    position: relative;
+    font-size: 15px;
+    line-height: 30px;
+    color: $color-gray;
+    text-decoration: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      background-color: $color-green;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-green;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  .contacts__address {
+    margin: 0;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .contacts__map {
+    position: relative;
+    height: 457px;
+    margin-bottom: 40px;
+  }
+
+  .contacts__map-image {
+    position: absolute;
+    width: 100vw;
+    left: 50%;
+    margin-left: -50vw;
+  }
+
+  @media (min-width: $tablet-width) {
+    .contacts {
+      padding-top: 62px;
+    }
+
+    .contacts__title {
+      position: relative;
+      margin-bottom: 50px;
+      font-size: 43px;
+      line-height: 50px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -15px;
+        right: 2px;
+        width: 47px;
+        height: 81px;
+        background-image: url("../img/icon-flag.svg");
+        background-repeat: no-repeat;
+      }
+    }
+
+    .contacts__wrapper {
+      display: flex;
+      margin-bottom: 55px;
+    }
+
+    .contacts__row {
+      align-items: baseline;
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+    .contacts__name {
+      margin-right: 7.40%;
+      font-size: 17px;
+    }
+
+    .contacts__email {
+      font-size: 17px;
+    }
+
+    .contacts__address {
+      font-size: 17px;
+    }
+
+    .contacts__map {
+      margin-bottom: 55px;
+    }
+
+    .contacts__button {
+      width: 230px;
+      margin: 0 auto;
+    }
+  }

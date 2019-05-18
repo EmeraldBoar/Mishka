@@ -1,8 +1,45 @@
+.slider__buttons {
+  display: flex;
+  margin-bottom: 35px;
+  border: 1px solid #ececec;
+}
+
 .slider__button {
   width: 50%;
   height: 52px;
   padding: 0;
-  background-color: #ffffff;
-  border: 1px solid #ececec;
+  background-color: transparent;
+  border: none;
+}
 
+.slider__button:hover .slider__button-icon,
+.slider__button:focus .slider__button-icon {
+  opacity: 0.6;
+}
+
+.slider__button:active .slider__button-icon {
+  opacity: 0.3;
+}
+
+.slider__button--border {
+  border-right: 1px solid #ececec;
+}
+
+@media (min-width: $tablet-width) {
+  .slider__buttons {
+    padding-right: 19px;
+    border: none;
+  }
+
+  .slider__button {
+    margin-right: 37px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .slider__button--border {
+    border: none;
+  }
 }

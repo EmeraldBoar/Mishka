@@ -136,32 +136,50 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="container">
+      <div class="reviews__wrapper container">
         <h2 class="reviews__title">Отзывы</h2>
         <ul class="reviews__list slider">
           <li class="reviews__item slider__item">
-            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-            <b class="reviews__author-name">Анастасия Красильникова</b>
-            <p class="reviews__author-instagram">@misssssiskras</p>
+            <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и&nbsp;мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+            <div class="reviews__author-wrapper">
+              <b class="reviews__author-name">Анастасия Красильникова</b>
+              <p class="reviews__author-instagram">@misssssiskras</p>
+            </div>
+            <div class="slider__buttons">
+              <button class="slider__button slider__button--border" type="button">
+                <svg class="slider__button-icon" width="50" height="26">
+                  <use xlink:href="#icon-left-arrow"></use>
+                </svg>
+              </button>
+              <button class="slider__button" type="button">
+                <svg class="slider__button-icon" width="50" height="26">
+                  <use xlink:href="#icon-right-arrow"></use>
+                </svg>
+              </button>
+            </div>
           </li>
         </ul>
-        <button class="slider__button" type="button">Назад</button>
-        <button class="slider__button" type="button">Вперед</button>
         <a class="reviews__button button" href="#">Написать</a>
       </div>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <div class="contacts__row">
-        <span class="contacts__name">e-mail:</span>
-        <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+      <div class="contacts__inner container">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__wrapper">
+          <div class="contacts__row">
+            <span class="contacts__name">e-mail:</span>
+            <a class="contacts__email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </div>
+          <div class="contacts__row">
+            <span class="contacts__name">Адрес:</span>
+            <p class="contacts__address">г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</p>
+          </div>
+        </div>
+        <div class="contacts__map">
+          <img class="contacts__map-image" src="img/logo-map-mobile@1x.png" alt="#" width="322" height="457">
+        </div>
+        <a class="contacts__button button" href="#">Напишите нам</a>
       </div>
-      <div class="contacts__row">
-        <span class="contacts__name">Адрес:</span>
-        <p class="contacts__address">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
-      </div>
-      <img class="map__image" src="img/logo-map-mobile@1x.png" alt="#">
-      <a class="contacts__button button" href="#">Напишите нам</a>
     </section>
   </main>
   <footer class="page-footer">
