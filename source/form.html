@@ -13,49 +13,53 @@
   </div>
   <header class="page-header">
     <nav class="main-navigation">
-      <div class="main-navigation__logo">
-        <a class="main-navigation__logo-link" href="index.html">
-          <svg width="86" height="35">
-            <use xlink:href="#logo-mobile"></use>
-          </svg>
-        </a>
-        <button class="main-navigation__button-close"></button>
+      <div class="main-navigation__wrapper-top">
+        <div class="main-navigation__logo">
+          <a class="main-navigation__logo-link" href="#">
+            <svg width="86" height="35">
+              <use xlink:href="#logo-mobile"></use>
+            </svg>
+          </a>
+          <button class="main-navigation__button-close"></button>
+        </div>
+        <ul class="main-navigation__main-list">
+          <li class="main-navigation__item main-navigation__main-item">
+            <a class="main-navigation__link main-navigation__main-link" href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="main-navigation__item main-navigation__main-item">
+            <a class="main-navigation__link main-navigation__main-link" href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__user-list">
+          <li class="main-navigation__item main-navigation__search">
+            <a class="main-navigation__link main-navigation__search-link" href="search.html">
+              <span class="main-navigation__search-text">Поиск по сайту</span>
+              <svg class="main-navigation__icon main-navigation__search-icon" width="18" height="18">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-navigation__item main-navigation__cart">
+            <a class="main-navigation__link main-navigation__cart-link" href="cart.html">
+              Корзина: пока пуста
+              <svg class="main-navigation__icon" width="21" height="18">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="main-navigation__main-list">
-        <li class="main-navigation__item main-navigation__main-item">
-          <a class="main-navigation__link main-navigation__main-link" href="catalog.html">Каталог товаров</a>
-        </li>
-        <li class="main-navigation__item main-navigation__main-item">
-          <a class="main-navigation__link main-navigation__main-link">Вязание на заказ</a>
-        </li>
-      </ul>
-      <ul class="main-navigation__user-list">
-        <li class="main-navigation__item main-navigation__search">
-          <a class="main-navigation__link" href="search.html">
-            <span class="main-navigation__search-text">Поиск по сайту</span>
-            <svg class="main-navigation__icon main-navigation__search-icon" width="18" height="18">
-              <use xlink:href="#icon-search"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="main-navigation__item main-navigation__cart">
-          <a class="main-navigation__link" href="cart.html">
-            Корзина: пока пуста
-            <svg class="main-navigation__icon" width="21" height="18">
-              <use xlink:href="#icon-cart"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <ul class="main-navigation__extra-list">
-        <li class="main-navigation__item main-navigation__extra-item">
-          <a class="main-navigation__link main-navigation__extra-link" href="new.html">Новые поступления</a>
-        </li>
-        <li class="main-navigation__item main-navigation__extra-item">
-          <a class="main-navigation__link main-navigation__extra-link" href="sale.html">Распродажа</a>
-        </li>
-      </ul>
-      <span class="page-header__delivery">Бесплатная доставка по России</span>
+      <div class="main-navigation__wrapper-bottom">
+        <ul class="main-navigation__extra-list">
+          <li class="main-navigation__item main-navigation__extra-item">
+            <a class="main-navigation__link main-navigation__extra-link" href="new.html">Новые поступления</a>
+          </li>
+          <li class="main-navigation__item main-navigation__extra-item">
+            <a class="main-navigation__link main-navigation__extra-link" href="sale.html">Распродажа</a>
+          </li>
+        </ul>
+        <span class="page-header__delivery">Бесплатная доставка по России</span>
+      </div>
     </nav>
   </header>
   <main class="page-main">
@@ -142,14 +146,45 @@
     </section>
   </main>
   <footer class="page-footer">
-    <ul class="socials">
-      <li class="socials__item">Instagram</li>
-      <li class="socials__item">Facebook</li>
-      <li class="socials__item">Twitter</li>
-    </ul>
-    <div class="copyright">
-      <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+    <div class="page-footer__container container">
+      <div class="page-footer__logo">
+        <a class="page-footer__link" href="index.html">
+          <svg width="86" height="35">
+            <use xlink:href="#logo-footer"></use>
+          </svg>
+        </a>
+      </div>
+      <ul class="page-footer__socials-list">
+        <li class="page-footer__socials-item">
+          <a href="#" class="page-footer__socials-link">
+            <svg width="22" height="21">
+              <use xlink:href="#icon-insta"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="page-footer__socials-item">
+          <a href="#" class="page-footer__socials-link">
+            <svg width="15" height="28">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="page-footer__socials-item">
+          <a href="#" class="page-footer__socials-link">
+            <svg width="23" height="20">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <b class="page-footer__copyright-text">Разработано</b>
+          <svg width="27" height="34">
+            <use xlink:href="#logo-htmlacademy"></use>
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 </body>
