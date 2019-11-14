@@ -15,7 +15,7 @@
     <nav class="main-navigation">
       <div class="main-navigation__wrapper-top">
         <div class="main-navigation__logo">
-          <a class="main-navigation__logo-link" href="#">
+          <a class="main-navigation__logo-link" href="index.html">
             <svg width="86" height="35">
               <use xlink:href="#logo-mobile"></use>
             </svg>
@@ -62,46 +62,66 @@
       </div>
     </nav>
   </header>
-  <main class="page-main">
-    <div class="page-main__title">
-      <h1 class="page-main__title-text">Каталог товаров</h1>
+  <main class="page-catalog">
+    <div class="page-catalog__title-wrapper container">
+      <h1 class="page-catalog__title">Каталог товаров</h1>
     </div>
     <section class="products">
-      <ul class="products__list">
-        <li class="products__item">
-          <a class="products__link" href=""><img class="products__image" src="img/image-catalog-1-mobile.png" alt="Зайчик-попрыгайчик" width="260" height="195"></a>
-          <div class="products__wrapper">
-            <a class="products__link" href=""><h2 class="products__name">Зайчик-попрыгайчик</h2></a>
-            <p class="products__specifications">Рост 30 см, вес 200 г</p>
-            <div class="products__inner">
-              <span class="products__price">1 200 руб.</span>
-              <button class="products__button">Добавить</button>
+      <div class="container">
+        <ul class="products__list">
+          <li class="products__item">
+            <a class="products__image-link" href="#">
+              <img class="products__image" src="img/image-catalog-1-mobile.png" alt="Зайчик-попрыгайчик" width="260" height="195">
+            </a>
+            <div class="products__info">
+              <a class="products__link" href=""><h2 class="products__name">Зайчик-попрыгайчик</h2></a>
+              <p class="products__specifications">Рост 30 см, вес 200 г</p>
+              <div class="products__inner">
+                <span class="products__price">1 200 руб.</span>
+                <button class="products__button">
+                  <svg width="20" height="19">
+                    <use xlink:href="#icon-cart"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="products__item">
-          <a class="products__link" href=""><img class="products__image" src="img/image-catalog-2-mobile.png" alt="Зайчик-попрыгайчик" width="260" height="195"></a>
-          <div class="products__wrapper">
-            <a class="products__link" href=""><h2 class="products__name">Корзинка для белья</h2></a>
-            <p class="products__specifications">Диаметр 15 см, высота 10 см</p>
-            <div class="products__inner">
-              <span class="products__price">690 руб.</span>
-              <button class="products__button">Добавить</button>
+          </li>
+          <li class="products__item">
+            <a class="products__image-link" href="#">
+              <img class="products__image" src="img/image-catalog-2-mobile.png" alt="Зайчик-попрыгайчик" width="260" height="195">
+            </a>
+            <div class="products__info">
+              <a class="products__link" href=""><h2 class="products__name">Корзинка для белья</h2></a>
+              <p class="products__specifications">Диаметр 15 см, высота 10 см</p>
+              <div class="products__inner">
+                <span class="products__price">690 руб.</span>
+                <button class="products__button">
+                  <svg width="20" height="19">
+                    <use xlink:href="#icon-cart"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="products__item">
-          <a class="products__link" href=""><img class="products__image" src="img/image-catalog-3-mobile.png" alt="Зайчик-попрыгайчик" width="260" height="195"></a>
-          <div class="products__wrapper">
-            <a class="products__link" href=""><h2 class="products__name">Большая корзинка для игрушек</h2></a>
-            <p class="products__specifications">Диаметр 30 см, высота 30 см</p>
-            <div class="products__inner">
-              <span class="products__price">1 500 руб.</span>
-              <button class="products__button">Добавить</button>
+          </li>
+          <li class="products__item">
+            <a class="products__image-link" href="#">
+              <img class="products__image" src="img/image-catalog-3-mobile.png" alt="Зайчик-попрыгайчик" width="260" height="195">
+            </a>
+            <div class="products__info">
+              <a class="products__link" href=""><h2 class="products__name">Большая корзинка для игрушек</h2></a>
+              <p class="products__specifications">Диаметр 30 см, высота 30 см</p>
+              <div class="products__inner">
+                <span class="products__price">1 500 руб.</span>
+                <button class="products__button">
+                  <svg width="20" height="19">
+                    <use xlink:href="#icon-cart"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="manufacturing">
       <h2 class="manufacturing__title">Процесс производства</h2>
