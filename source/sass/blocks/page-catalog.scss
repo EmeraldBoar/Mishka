@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 256px;
+  min-height: 177px;
   background-color: #f1f1f1;
 }
 
@@ -12,3 +12,24 @@
   font-weight: 700;
   color: #000000;
 }
+
+@media (min-width: $tablet-width) {
+  .page-catalog__title-wrapper {
+    position: relative;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      width: 100%;
+      height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+    }
+  }
+  
+  .page-catalog__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
