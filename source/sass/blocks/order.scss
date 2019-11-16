@@ -19,11 +19,11 @@
   border-top: 1px solid #62d1ba;
 }
 
-.order__fieldset--padding-top {
+.order__fieldset-contact {
   padding-top: 9px;
 }
 
-.order__fieldset--no-margin-bottom {
+.order__fieldset-textarea {
   margin-bottom: 0;
 }
 
@@ -164,8 +164,132 @@
 }
 
 @media(min-width: $tablet-width) {
+  .order {
+    padding-bottom: 50px;
+  }
+  
   .order__title {
-    width: 76%;
-    padding: 62px 0;
+    padding-top: 62px;
+    padding-bottom: 5px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+  
+  .order__container--gray {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #f1f1f1;
+  }
+  
+  .order__fieldset {
+    margin-bottom: 0;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 167px;
+    border: none;
+  }
+  
+  .order__fieldset-checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 26px;
+  }
+  
+  .order__fieldset-contact {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-bottom: 25px;
+  }
+  
+  .order__legend {
+    top: 65px;
+    left: 0;
+    padding: 0;
+    background-color: transparent;
+  }
+  
+  .order__legend-contact {
+    top: 20px;
+  }
+  
+  .order__checkbox-wrapper {
+    width: 50%;
+    margin-bottom: 24px;
+    
+    &:last-child {
+      margin-bottom: 24px;
+    }
+  }
+  
+  .order__fullname-wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .order__label {
+    font-size: 19px;
+    line-height: 19px;
+  }
+  
+  .order__label-fullname {
+    margin-right: 25px;
+  }
+  
+  .order__contact {
+    padding-left: 17px;
+  }
+  
+  .order__contact--gray {
+    background-color: #f1f1f1;
+  }
+  
+  .order__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .order__button {
+    order: -1;
+    width: 230px;
+  }
+}
+
+@media(min-width: $desktop-width) {
+  .order__title {
+    width: 850px;
+    padding-bottom: 12px;
+    padding-left: 175px;
+  }
+  
+  .order__fieldset {
+    padding-left: 175px;
+  }
+  
+  .order__legend {
+    left: 61px;
+  }
+  
+  .order__checkbox-wrapper {
+    width: 33.33%;
+  }
+  
+  .order__fullname-wrapper,
+  .order__contact-wrapper {
+    padding-right: 175px;
+  }
+  
+  .order__tel + svg,
+  .order__email + svg {
+    right: 183px;
+  }
+  
+  .order__fieldset-textarea {
+    padding-right: 175px;
+  }
+  
+  .order__inner {
+    padding: 0 175px;
   }
 }
