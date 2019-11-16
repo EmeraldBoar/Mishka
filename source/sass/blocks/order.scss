@@ -12,19 +12,25 @@
 }
 
 .order__fieldset {
-  margin: 0;
-  margin-bottom: 33px;
-  padding: 0;
+  position: relative;
+  margin-bottom: 40px;
+  padding-top: 32px;
   border: none;
   border-top: 1px solid #62d1ba;
 }
 
-.order__fieldset--last {
+.order__fieldset--padding-top {
+  padding-top: 9px;
+}
+
+.order__fieldset--no-margin-bottom {
   margin-bottom: 0;
 }
 
+
 .order__legend {
-  position: relative;
+  position: absolute;
+  top: -8px;
   padding-right: 27px;
   font-size: 17px;
   line-height: 17px;
@@ -32,15 +38,18 @@
   color: #63d1bb;
   text-transform: uppercase;
   text-align: left;
+  background-color: #ffffff;
+  z-index: 1;
 }
 
-.order__radio-wrapper {
-  margin-bottom: 23px;
-
-  &:first-of-type {
-    margin-top: 27px;
-  }
-
+.order__radio-wrapper,
+.order__checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  margin-bottom: 22px;
+  padding-left: 63px;
+  
   &:last-child {
     margin-bottom: 0;
   }
@@ -48,22 +57,20 @@
 
 .order__label {
   position: relative;
-  display: block;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
   color: #000000;
 }
 
-.order__label--pseudoelement {
-  padding-left: 63px;
+.order__label-toggle {
 
   &::before {
     content: "";
     position: absolute;
-    left: 0;
     top: 50%;
     margin-top: -20px;
+    left: -62px;
     width: 40px;
     height: 40px;
     border: 2px solid #444444;
@@ -79,28 +86,16 @@
   }
 }
 
-.order__label--radio::before {
+.order__label-toggle--radio::before {
   border-radius: 50%;
 }  
   
-.order__radio:checked + .order__label--radio::before {
+.order__radio:checked + .order__label-toggle--radio::before {
   background-color: #62d1ba;
   box-shadow: inset 0 0 0 10px #ffffff;
 }
 
-.order__checkbox-wrapper {
-  margin-bottom: 42px;
-  
-  &:first-of-type {
-    margin-top: 30px;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.order__checkbox:checked + .order__label--checkbox::before {
+.order__checkbox:checked + .order__label-toggle--checkbox::before {
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -108,19 +103,11 @@
 }
 
 .order__fullname-wrapper {
-  margin-bottom: 23px;
-  
-  &:first-of-type {
-    margin-top: 27px;
-  }
+  margin-bottom: 24px;
   
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-.order__contact-wrapper {
-  position: relative;
 }
 
 .order__contact {
@@ -160,7 +147,6 @@
   width: 100%;
   padding: 17px;
   min-height: 142px;
-  margin-top: 23px;
   border: 2px solid #444444;
   
   &:hover,
@@ -181,9 +167,5 @@
   .order__title {
     width: 76%;
     padding: 62px 0;
-  }
-  
-  .order__fieldset {
-    border: none;
   }
 }
