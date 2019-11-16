@@ -15,10 +15,12 @@
 .slider__button:hover .slider__button-icon,
 .slider__button:focus .slider__button-icon {
   opacity: 0.6;
+  transition: 500ms;
 }
 
 .slider__button:active .slider__button-icon {
   opacity: 0.3;
+  transition: 500ms;
 }
 
 .slider__button--border {

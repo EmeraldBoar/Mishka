@@ -23,6 +23,7 @@
   &:hover svg,
   &:focus svg {
     fill: $color-green;
+    transition: 500ms;
   }  
 
   &:active svg {
@@ -59,10 +60,12 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+  transition: 500ms;
 
   &:hover svg,
   &:focus svg {
     fill: #46c1ae;
+    // transition: 500ms;
   }
   
   &:active {
@@ -72,6 +75,7 @@
 
 .page-footer__copyright-link  svg {
   fill: $color-green;
+  transition: 500ms;
 }
 
 @media (min-width: $tablet-width) {
@@ -92,10 +96,12 @@
     &:hover svg,
     &:focus svg {
       fill: #46c1ae;
+      transition: 500ms;
     }
 
     &:active {
       opacity: 0.3;
+      transition: 500ms;
     }
   }
   

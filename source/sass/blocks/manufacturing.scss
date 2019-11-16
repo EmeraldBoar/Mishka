@@ -92,3 +92,41 @@
     line-height: 30px;
   }
 }
+
+@media(min-width: $desktop-width) {
+  .manufacturing {
+    padding-bottom: 105px;
+  }
+  .manufacturing__container {
+    position: relative;
+    min-height: 455px;
+    padding-left: 66.67%;
+  }
+  
+  .manufacturing__title {
+    display: block;
+    width: 83%;
+    min-height: auto;
+    margin-bottom: 32px;
+    padding-left: 80px;
+    padding-top: 98px;
+    background-position: 80px 47px;
+  }
+  
+  .manufacturing__video {
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    margin-bottom: -227px;
+    width: 66.67%;
+    background-image: url("../img/logo-video-desktop.png");
+  }
+  
+  .manufacturin__info {
+    padding-left: 80px;
+  }
+  
+  .manufacturing__text {
+    margin-bottom: 51px;
+  }
+}

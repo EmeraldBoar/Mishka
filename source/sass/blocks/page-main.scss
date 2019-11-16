@@ -1,21 +1,21 @@
-.page-catalog__title-wrapper {
+.page-main__title {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 177px;
-  background-color: #f1f1f1;
-}
-
-.page-catalog__title {
+  margin: 0;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   color: #000000;
+  background-color: #f1f1f1;
 }
 
 @media (min-width: $tablet-width) {
-  .page-catalog__title-wrapper {
+  .page-main__title {
     position: relative;
+    font-size: 43px;
+    line-height: 50px;
     
     &::after {
       content: "";
@@ -26,10 +26,13 @@
       background-image: url("../img/bg-zigzag-fill.svg");
     }
   }
-  
-  .page-catalog__title {
-    font-size: 43px;
-    line-height: 50px;
+}
+
+@media(min-width: $desktop-width) {
+  .page-main__title {
+    min-height: 205px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 

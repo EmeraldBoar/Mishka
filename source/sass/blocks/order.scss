@@ -1,0 +1,189 @@
+.order {
+  padding-bottom: 55px;
+}
+
+.order__title {
+  width: 92%;
+  margin: 0;
+  padding: 25px 0;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.order__fieldset {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  border: none;
+  border-top: 1px solid #62d1ba;
+}
+
+.order__fieldset--last {
+  margin-bottom: 0;
+}
+
+.order__legend {
+  position: relative;
+  padding-right: 27px;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 700;
+  color: #63d1bb;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.order__radio-wrapper {
+  margin-bottom: 23px;
+
+  &:first-of-type {
+    margin-top: 27px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.order__label {
+  position: relative;
+  display: block;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.order__label--pseudoelement {
+  padding-left: 63px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -20px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #444444;
+  }
+  
+  &:hover::before,
+  &:focus::before {
+    border-color: #62d1ba;
+  }
+    
+  &:active::before {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.order__label--radio::before {
+  border-radius: 50%;
+}  
+  
+.order__radio:checked + .order__label--radio::before {
+  background-color: #62d1ba;
+  box-shadow: inset 0 0 0 10px #ffffff;
+}
+
+.order__checkbox-wrapper {
+  margin-bottom: 42px;
+  
+  &:first-of-type {
+    margin-top: 30px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.order__checkbox:checked + .order__label--checkbox::before {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 16px;
+}
+
+.order__fullname-wrapper {
+  margin-bottom: 23px;
+  
+  &:first-of-type {
+    margin-top: 27px;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.order__contact-wrapper {
+  position: relative;
+}
+
+.order__contact {
+  width: 100%;
+  height: 52px;
+  border: none;
+  box-shadow: inset 0 -2px 0 #000000;
+  
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 -2px 0 #62d1ba;
+  }
+  
+  &:hover + svg,
+  &:focus + svg {
+    opacity: 1;
+    fill: #62d1ba;
+  }
+}
+
+.order__tel,
+.order__email {
+  position: relative;
+  padding-right: 40px;
+}
+
+.order__tel + svg,
+.order__email + svg {
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  margin-top: -12px;
+  opacity: 0.2;
+}
+
+.order__textarea {
+  width: 100%;
+  padding: 17px;
+  min-height: 142px;
+  margin-top: 23px;
+  border: 2px solid #444444;
+  
+  &:hover,
+  &:focus {
+    border-color: #62d1ba;
+    outline: none;
+  }
+}
+
+.order__mandatory {
+  margin-top: 17px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media(min-width: $tablet-width) {
+  .order__title {
+    width: 76%;
+    padding: 62px 0;
+  }
+  
+  .order__fieldset {
+    border: none;
+  }
+}
