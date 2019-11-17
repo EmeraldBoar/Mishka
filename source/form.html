@@ -16,9 +16,11 @@
       <div class="main-navigation__wrapper-top">
         <div class="main-navigation__logo">
           <a class="main-navigation__logo-link" href="index.html">
-            <svg width="86" height="35">
-              <use xlink:href="#logo-mobile"></use>
-            </svg>
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
+            </picture>
           </a>
           <button class="main-navigation__button-close"></button>
         </div>
@@ -144,7 +146,7 @@
             <span class="order__legend order__legend-contact">Email</span>
             <div class="order__contact-wrapper">
               <input class="order__email order__contact order__contact--gray" name="email" type="email" placeholder="Ваш Email*">
-              <svg width="32" height="21">
+              <svg width="32" height="32">
                 <use xlink:href="#icon-mail"></use>
               </svg>
             </div>
@@ -167,7 +169,7 @@
     <div class="page-footer__container container">
       <div class="page-footer__logo">
         <a class="page-footer__link" href="index.html">
-          <svg width="86" height="35">
+          <svg width="102" height="35">
             <use xlink:href="#logo-footer"></use>
           </svg>
         </a>

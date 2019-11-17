@@ -16,9 +16,11 @@
       <div class="main-navigation__wrapper-top">
         <div class="main-navigation__logo">
           <a class="main-navigation__logo-link" href="index.html">
-            <svg width="86" height="35">
-              <use xlink:href="#logo-mobile"></use>
-            </svg>
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Мишка" width="86" height="35">
+            </picture>
           </a>
           <button class="main-navigation__button-close"></button>
         </div>
@@ -69,7 +71,14 @@
         <ul class="products__list">
           <li class="products__item">
             <a class="products__image-link" href="#">
-              <img class="products__image" src="img/image-catalog-1-mobile.png" alt="Зайчик-попрыгайчик" width="260" height="195">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/image-catalog-1-desktop.webp" type="image/webp">
+                <source media="(min-width: 1150px)" srcset="img/image-catalog-1-desktop.png">
+                  <source media="(min-width: 768px)" srcset="img/image-catalog-1-tablet.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/image-catalog-1-tablet.png">
+                <source srcset="img/image-catalog-1-mobile.webp" type="image/webp">
+                  <img class="products__image" src="img/image-catalog-1-mobile.png" alt="Зайчик-попрыгайчик" width="260" height="195">
+              </picture>
             </a>
             <div class="products__info">
               <a class="products__link" href=""><h2 class="products__name">Зайчик-попрыгайчик</h2></a>
@@ -86,7 +95,14 @@
           </li>
           <li class="products__item">
             <a class="products__image-link" href="#">
-              <img class="products__image" src="img/image-catalog-2-mobile.png" alt="Зайчик-попрыгайчик" width="260" height="195">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/image-catalog-2-desktop.webp" type="image/webp">
+                <source media="(min-width: 1150px)" srcset="img/image-catalog-2-desktop.png">
+                  <source media="(min-width: 768px)" srcset="img/image-catalog-2-tablet.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/image-catalog-2-tablet.png">
+                <source srcset="img/image-catalog-2-mobile.webp" type="image/webp">
+                  <img class="products__image" src="img/image-catalog-2-mobile.png" alt="Зайчик-попрыгайчик" width="260" height="195">
+              </picture>
             </a>
             <div class="products__info">
               <a class="products__link" href=""><h2 class="products__name">Корзинка для белья</h2></a>
@@ -103,7 +119,14 @@
           </li>
           <li class="products__item">
             <a class="products__image-link" href="#">
-              <img class="products__image" src="img/image-catalog-3-mobile.png" alt="Зайчик-попрыгайчик" width="260" height="195">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/image-catalog-3-desktop.webp" type="image/webp">
+                <source media="(min-width: 1150px)" srcset="img/image-catalog-3-desktop.png">
+                  <source media="(min-width: 768px)" srcset="img/image-catalog-3-tablet.webp" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/image-catalog-3-tablet.png">
+                <source srcset="img/image-catalog-3-mobile.webp" type="image/webp">
+                  <img class="products__image" src="img/image-catalog-3-mobile.png" alt="Зайчик-попрыгайчик" width="260" height="195">
+              </picture>
             </a>
             <div class="products__info">
               <a class="products__link" href=""><h2 class="products__name">Большая корзинка для игрушек</h2></a>
@@ -144,7 +167,7 @@
     <div class="page-footer__container container">
       <div class="page-footer__logo">
         <a class="page-footer__link" href="index.html">
-          <svg width="86" height="35">
+          <svg width="102" height="35">
             <use xlink:href="#logo-footer"></use>
           </svg>
         </a>
